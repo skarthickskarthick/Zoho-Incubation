@@ -1,0 +1,25 @@
+import java.util.Arrays;
+
+public class strreplace {
+	public static void main(String args[])
+	{
+		 String str = "i loooove india";
+	        String substr = "ove";
+		for(int i=0;i<=str.length()-substr.length();i++)
+		{	int j=0;
+			for(j=0;j<substr.length();j++)
+				{
+					if(substr.charAt(j)!=str.charAt(j+i))
+					{
+						break;
+					}
+				}
+			   if(j==substr.length())
+			   {
+				   System.out.print(i);
+				   break;
+			   }
+		}
+	}
+}
+ output: 6
