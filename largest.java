@@ -1,26 +1,31 @@
-package practise;
-
-public class largest {
-	public static void main(String args[])
+public class pattern11 {
+public static void main(String args[])
+{
+	int n=4,startvalue=1;
+	for(int i=1;i<=n;i++)
+		
 	{
-		int arr[]= {10,13,9,6,12,89};
-		int max=arr[0],res=0;
-		for(int i =1;i<arr.length;i++)
+		int value=startvalue;
+		for(int j=1;j<=nn;j++)
 		{
-	
-			if(arr[i]>max)
+			System.out.print(value+" ");
+			if((i+j)>n)
 			{
-				res=max;
-				max=arr[i];
-				
+				int diff=(i+j)-n;
+				value+=(n-diff)+1;
 			}
-			else if(arr[i]>res&&res!=max)
-			{
-				res=arr[i];
-			}
-			 
+			else
+				value+=i+j;
 		}
-		System.out.println(res);
+		startvalue+=i;
+		System.out.println();
 	}
-
 }
+}
+
+output
+1 3 6 10 
+2 5 9 13 
+4 8 12 15 
+7 11 14 16 
+
