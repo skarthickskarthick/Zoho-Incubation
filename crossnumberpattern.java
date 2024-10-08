@@ -1,5 +1,11 @@
 package pattern;
 
+output:
+1 3 6 10 15 
+2 5 9 14 19 
+4 8 13 18 22 
+7 12 17 21 24 
+11 16 20 23 25 
 public class crossnumberpattern {
     public static void main(String args[])
     {
@@ -40,6 +46,7 @@ public class crossnumberpattern {
 
                }
             }
+
             System.out.println();
         }
     }
